@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Gentle Lighthouse Beacon</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
+    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
+    main { padding: 2em; max-width: 800px; margin: auto; }
+    h2 { font-size: 2em; margin-bottom: 1em; }
+    ul { font-size: 1.1em; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Our Services</h2>
+  </header>
+  <main>
+    <ul>
+      <li>Individual Counselling (Adults & Teens)</li>
+      <li>Relationship & Couples Therapy</li>
+      <li>Grief & Trauma Support</li>
+      <li>Mindfulness & Stress Management</li>
+      <li>Online Video Sessions via Setmore</li>
+    </ul>
+  </main>
+  <footer>
+    &copy; 2025 Gentle Lighthouse Beacon
+  </footer>
+</body>
+</html>

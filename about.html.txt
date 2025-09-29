@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Gentle Lighthouse Beacon</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
+    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
+    main { padding: 2em; max-width: 800px; margin: auto; }
+    h2 { font-size: 2em; margin-bottom: 1em; }
+    p { font-size: 1.1em; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>About Gentle Lighthouse Beacon</h2>
+  </header>
+  <main>
+    <p>Founded with the belief that everyone deserves a safe space to heal, Gentle Lighthouse Beacon offers online counselling tailored to your emotional and mental well-being. Our approach is rooted in empathy, clarity, and empowerment.</p>
+    <p>Whether you're navigating anxiety, grief, relationship challenges, or simply seeking personal growth, we’re here to guide you with compassion and care.</p>
+  </main>
+  <footer>
+    &copy; 2025 Gentle Lighthouse Beacon
+  </footer>
+</body>
+</html>

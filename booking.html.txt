@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Session - Gentle Lighthouse Beacon</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
+    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
+    main { padding: 2em; text-align: center; }
+    iframe { width: 100%; height: 600px; border: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Book a Session</h2>
+  </header>
+  <main>
+    <p>Use the scheduler below to book your online counselling session.</p>
+    <iframe src="https://gentlelighthousebeacon.setmore.com/" title="Booking"></iframe>
+  </main>
+  <footer>
+    &copy; 2025 Gentle Lighthouse Beacon
+  </footer>
+</body>
+</html>
