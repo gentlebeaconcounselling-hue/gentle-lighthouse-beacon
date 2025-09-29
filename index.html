@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-image: url('images/counselling profile.jpg'); /* Make sure the filename has no spaces */
+      background-image: url('images/counselling-profile.jpg'); /* Ensure no spaces in filename */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -16,15 +16,30 @@
       margin: 0;
       padding: 0;
     }
+
     nav {
       padding: 1em;
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 0 auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
+
     nav a {
       margin: 0 1em;
       text-decoration: none;
       color: #005a9c;
+      font-weight: bold;
+      font-size: 1.1em;
     }
+
+    nav a:hover {
+      color: #003d6b;
+      text-decoration: underline;
+    }
+
     .overlay {
       background-color: rgba(255, 255, 255, 0.85);
       padding: 2em;
@@ -34,19 +49,23 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 0.5em;
     }
+
     p {
       font-size: 1.2em;
       max-width: 700px;
       margin: 1em auto;
     }
+
     footer {
       text-align: center;
       padding: 2em;
       font-size: 0.9em;
+      color: #333;
     }
   </style>
 </head>
