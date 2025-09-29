@@ -2,24 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book a Session - Gentle Lighthouse Beacon</title>
+  <title>Book a Session – Gentle Lighthouse Beacon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
-    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
-    main { padding: 2em; text-align: center; }
-    iframe { width: 100%; height: 600px; border: none; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+      margin: 0;
+      padding: 2em;
+      text-align: center;
+    }
+    h1 { color: #005a9c; }
+    p { font-size: 1.2em; max-width: 700px; margin: 1em auto; }
+    a.button {
+      display: inline-block;
+      padding: 0.7em 1.2em;
+      background-color: #005a9c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1em;
+    }
+    form {
+      max-width: 600px;
+      margin: 2em auto;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #005a9c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 1em;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h2>Book a Session</h2>
-  </header>
-  <main>
-    <p>Use the scheduler below to book your online counselling session.</p>
-    <iframe src="https://gentlelighthousebeacon.setmore.com/" title="Booking"></iframe>
-  </main>
-  <footer>
-    &copy; 2025 Gentle Lighthouse Beacon
-  </footer>
+  <h1>Book a Counselling Session</h1>
+  <p>We are based in Singapore and offer online counselling from <strong>7:00 AM to 8:00 PM daily</strong>.</p>
+  <p>Click below to book your session via our external scheduler:</p>
+  <a href="https://yourbookinglink.setmore.com" target="_blank" class="button">Book Now</a>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="issue">Brief Description of Your Counselling Needs</label>
+    <textarea name="issue" id="issue" rows="5" required></textarea>
+
+    <input type="submit" value="Send Request">
+  </form>
 </body>
 </html>
