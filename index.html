@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: 'Lora', serif;
-      background-image: url('images/counselling profile.jpg'); /* Ensure no spaces in filename */
+      background-image: url('images/counselling-profile.jpg'); /* Ensure no spaces in filename */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -16,21 +16,35 @@
       color: #333;
       margin: 0;
       padding: 0;
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     nav {
-      padding: 1em;
-      text-align: center;
       background-color: rgba(255, 255, 255, 0.85);
-      width: 60%;
-      max-width: 600px;
-      margin: 2em 0 0 5%;
-      border-radius: 10px;
+      width: 200px;
+      padding: 2em 1em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 0.5s;
     }
 
     nav a {
-      margin-right: 1em;
       text-decoration: none;
       color: #005a9c;
       font-weight: bold;
@@ -45,57 +59,9 @@
     .overlay {
       background-color: rgba(255, 255, 255, 0.85);
       padding: 2em;
-      width: 60%;
-      max-width: 600px;
-      margin: 2em 0 2em 5%;
+      max-width: 700px;
+      margin: 2em;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 1em auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2em;
-      font-size: 0.9em;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="booking.html">Book</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="overlay">
-    <header>
-      <h1>Gentle Lighthouse Beacon Online Counselling</h1>
-      <p>A steady light in stormy times—offering safe, compassionate online counselling to help you find clarity and calm.</p>
-    </header>
-
-    <main>
-      <p>Welcome. You don’t have to weather the storm alone. Together, we’ll chart a course toward resilience and hope.</p>
-    </main>
-  </div>
-
-  <footer>
-    &copy; 2025 Gentle Lighthouse Beacon. All rights reserved.
-  </footer>
-</body>
-</html>
-
-
+      flex-grow:
