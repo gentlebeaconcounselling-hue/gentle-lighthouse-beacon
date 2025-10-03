@@ -68,4 +68,55 @@
 
     nav {
       background-color: rgba(255, 255, 255, 0.85);
-      padding: 1
+      padding: 1em 2em;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 0.2s;
+      animation-fill-mode: forwards;
+      border-radius: 10px 10px 0 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #005a9c;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #003d6b;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Gentle Lighthouse Beacon Online Counselling</h1>
+      <p>A steady light in stormy times—offering safe, compassionate online counselling to help you find clarity and calm.</p>
+    </header>
+
+    <main>
+      <p>Welcome. You don’t have to weather the storm alone. Together, we’ll chart a course toward resilience and hope.</p>
+    </main>
+
+    <footer>
+      &copy; 2025 Gentle Lighthouse Beacon. All rights reserved.
+    </footer>
+  </div>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Book</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</body>
+</html>
