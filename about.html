@@ -41,24 +41,32 @@
       margin: 5vh 3vw;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1.5s ease-out forwards;
-      animation-delay: 0.4s;
-      animation-fill-mode: forwards;
     }
 
-    h1 {
+    .section {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+      margin-bottom: 2em;
+    }
+
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.8s; }
+    .section:nth-of-type(3) { animation-delay: 1.2s; }
+    .section:nth-of-type(4) { animation-delay: 1.6s; }
+
+    h2 {
       font-family: 'Dancing Script', cursive;
-      font-size: 2.5em;
+      font-size: 2em;
       font-style: italic;
-      margin-bottom: 0.5em;
       color: #003d6b;
+      margin-bottom: 0.5em;
     }
 
     p {
       font-size: 1.2em;
       line-height: 1.6;
-      margin: 1em 0;
       color: #444;
+      margin: 0;
     }
 
     footer {
@@ -70,16 +78,33 @@
 </head>
 <body>
   <div class="content">
-    <h1>My Approach to Counselling</h1>
-    <p>
-      Driven by a passion for helping others, I have trained in various modalities for managing anxiety, post-trauma and self-esteem issues, and learning self-compassion. I specialize in healing before forgiveness and work with my clients to develop effective strategies for coping with their personal challenges.
-    </p>
-    <p>
-      Whether you're navigating anxiety, burnout, or life transitions, this is a space where you can anchor and reflect. I believe each of us carries an inner compass, even when the path feels lost.
-    </p>
-    <p>
-      In my practice, I serve as a beacon—helping you reconnect with your sense of direction, resilience, and authentic self. Together, we safely explore, gain clarity, and move forward with greater confidence.
-    </p>
+    <div class="section">
+      <h2>My Approach to Counselling</h2>
+      <p>
+        I’m passionate about helping others find clarity and calm. I’ve trained in various modalities to support anxiety, trauma recovery, self-esteem, and self-compassion.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Healing Before Forgiveness</h2>
+      <p>
+        My approach centers on healing before forgiveness. I work with clients to develop practical strategies for navigating anxiety, burnout, and life transitions.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>A Space to Anchor and Reflect</h2>
+      <p>
+        This is a space to anchor and reflect. I believe we each carry an inner compass—even when the path feels lost.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>A Beacon for Your Journey</h2>
+      <p>
+        As your counsellor, I serve as a beacon to help you reconnect with your direction, resilience, and authentic self.
+      </p>
+    </div>
   </div>
 
   <footer>
