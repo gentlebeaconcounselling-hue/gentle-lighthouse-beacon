@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
+    html {
+      overflow-y: scroll;
+    }
+
     body {
       font-family: 'Lora', serif;
       background-image: url('images/counselling profile.jpg');
@@ -17,6 +21,17 @@
       color: #333;
       margin: 0;
       padding: 0;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .content {
@@ -40,6 +55,16 @@
     p {
       font-size: 1.2em;
       margin: 1em 0;
+    }
+
+    .affirmation {
+      font-size: 1.1em;
+      font-style: italic;
+      color: #444;
+      margin-top: 2em;
+      animation: fadeIn 2s ease-out forwards;
+      animation-delay: 1.2s;
+      opacity: 0;
     }
 
     .buttons {
@@ -70,17 +95,6 @@
       font-size: 0.9em;
       color: #333;
     }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 <body>
@@ -88,6 +102,8 @@
     <h1>Gentle Lighthouse Beacon Online Counselling</h1>
     <p>A steady light in stormy times—offering safe, compassionate online counselling to help you find clarity and calm.</p>
     <p>Welcome. You don’t have to weather the storm alone. Together, we’ll chart a course toward resilience and hope.</p>
+
+    <p class="affirmation">“You are not alone. Even the smallest light can guide the way.”</p>
 
     <div class="buttons">
       <button onclick="location.href='about.html'">About</button>
