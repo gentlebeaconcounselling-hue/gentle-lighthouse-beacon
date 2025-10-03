@@ -2,25 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - Gentle Lighthouse Beacon</title>
+  <title>About – Gentle Lighthouse Beacon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
-    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
-    main { padding: 2em; max-width: 800px; margin: auto; }
-    h2 { font-size: 2em; margin-bottom: 1em; }
-    p { font-size: 1.1em; line-height: 1.6; }
+    html {
+      overflow-y: scroll;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-image: url('images/counselling profile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2em;
+      max-width: 700px;
+      margin: 5vh 3vw;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 0.4s;
+      animation-fill-mode: forwards;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5em;
+      font-style: italic;
+      margin-bottom: 0.5em;
+      color: #003d6b;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin: 1em 0;
+      color: #444;
+    }
+
+    footer {
+      margin: 3em 3vw;
+      font-size: 0.9em;
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h2>About Gentle Lighthouse Beacon</h2>
-  </header>
-  <main>
-    <p>Founded with the belief that everyone deserves a safe space to heal, Gentle Lighthouse Beacon offers online counselling tailored to your emotional and mental well-being. Our approach is rooted in empathy, clarity, and empowerment.</p>
-    <p>Whether you're navigating anxiety, grief, relationship challenges, or simply seeking personal growth, we’re here to guide you with compassion and care.</p>
-  </main>
+  <div class="content">
+    <h1>My Approach to Counselling</h1>
+    <p>
+      Driven by a passion for helping others, I have trained in various modalities for managing anxiety, post-trauma and self-esteem issues, and learning self-compassion. I specialize in healing before forgiveness and work with my clients to develop effective strategies for coping with their personal challenges.
+    </p>
+    <p>
+      Whether you're navigating anxiety, burnout, or life transitions, this is a space where you can anchor and reflect. I believe each of us carries an inner compass, even when the path feels lost.
+    </p>
+    <p>
+      In my practice, I serve as a beacon—helping you reconnect with your sense of direction, resilience, and authentic self. Together, we safely explore, gain clarity, and move forward with greater confidence.
+    </p>
+  </div>
+
   <footer>
-    &copy; 2025 Gentle Lighthouse Beacon
+    &copy; 2025 Gentle Lighthouse Beacon. All rights reserved.
   </footer>
 </body>
 </html>
