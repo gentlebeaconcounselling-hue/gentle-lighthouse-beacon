@@ -2,31 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services - Gentle Lighthouse Beacon</title>
+  <title>Services – Gentle Lighthouse Beacon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f8fb; color: #333; margin: 0; padding: 0; }
-    header, footer { background-color: #cce0f5; padding: 2em; text-align: center; }
-    main { padding: 2em; max-width: 800px; margin: auto; }
-    h2 { font-size: 2em; margin-bottom: 1em; }
-    ul { font-size: 1.1em; line-height: 1.6; }
+    html {
+      overflow-y: scroll;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-image: url('images/counselling profile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2em;
+      max-width: 700px;
+      margin: 5vh 3vw;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+      margin-bottom: 2em;
+    }
+
+    .section:nth-of-type(1) { animation-delay: 0.4s; }
+    .section:nth-of-type(2) { animation-delay: 0.6s; }
+    .section:nth-of-type(3) { animation-delay: 0.8s; }
+    .section:nth-of-type(4) { animation-delay: 1.0s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+    .section:nth-of-type(6) { animation-delay: 1.4s; }
+    .section:nth-of-type(7) { animation-delay: 1.6s; }
+    .section:nth-of-type(8) { animation-delay: 1.8s; }
+    .section:nth-of-type(9) { animation-delay: 2.0s; }
+    .section:nth-of-type(10) { animation-delay: 2.2s; }
+
+    h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      font-style: italic;
+      color: #003d6b;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #444;
+      margin: 0;
+    }
+
+    footer {
+      margin: 3em 3vw;
+      font-size: 0.9em;
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h2>Our Services</h2>
-  </header>
-  <main>
-    <ul>
-      <li>Individual Counselling (Adults & Older Teens)</li>
-      <li>Healing Before Forgiveness Therapy</li>
-      <li>Grief, Chronic Pain & Trauma Support</li>
-      <li>Mindfulness & Stress Management</li>
-      <li>Life Transitions Support</li>
-    </ul>
-  </main>
+  <div class="content">
+    <div class="section">
+      <h2>Services I Offer</h2>
+      <p>
+        I offer gentle, compassionate support tailored to your needs. Each session is a space to reflect, heal, and grow.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Individual Counselling (Adults & Older Teens)</h2>
+      <p>
+        One-on-one support for adults and older teens navigating emotional challenges, life changes, or personal growth.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Healing Before Forgiveness Therapy</h2>
+      <p>
+        A trauma-informed approach that honors your healing journey before exploring forgiveness—at your own pace.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Grief, Chronic Pain & Trauma Support</h2>
+      <p>
+        Gentle guidance through grief, long-term pain, and trauma—creating space for comfort, resilience, and healing.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Mindfulness & Stress Management</h2>
+      <p>
+        Practical tools and calming practices to help you manage stress, anxiety, and emotional overwhelm.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Life Transitions Support</h2>
+      <p>
+        Support through career shifts, relationship changes, relocation, or other major life transitions.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Anxiety Support</h2>
+      <p>
+        Gentle strategies to manage worry, overwhelm, and panic—helping you feel more grounded and present.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Trauma Recovery</h2>
+      <p>
+        A safe, non-judgmental space to process past experiences and begin healing at your own pace.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Self-Esteem & Identity</h2>
+      <p>
+        Support in building confidence, self-worth, and reconnecting with your authentic self.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Session Details</h2>
+      <p>
+        Sessions are offered online via video or phone. Sliding scale available—please reach out to discuss what feels accessible for you.
+      </p>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2025 Gentle Lighthouse Beacon
+    &copy; 2025 Gentle Lighthouse Beacon. All rights reserved.
   </footer>
 </body>
 </html>
-
+<div class="section">
+  <h2>Let’s Take the Next Step Together</h2>
+  <p>
+    If something here resonates with you, I invite you to <a href="booking.html" style="color:#003d6b; text-decoration:underline;">reach out and book a session</a>. Whether you're ready to begin or simply curious, this space is here for you.
+  </p>
+</div>
